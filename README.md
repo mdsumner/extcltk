@@ -68,4 +68,9 @@ str(ps)
   ..$ : chr [1:195] "Lat1" "Lon1" "k1" "Lat2" ...
 
 
-``
+```
+
+
+The oldest date I can find with this is 10 March 2004, it's in my old Dropbox store. It's impressive that it just works still. 
+
+
