@@ -14,7 +14,7 @@ source("extent.r")
 
 This provides a little tcltk GUI, and an open R graphics plot. you can see the plot update as you change the settings. 
 
-Try playing with **Start position** and **Max number of twilights*. Some settings affect performance, like **Gridsize** and **Bandwidth scale factor**. 
+Try playing with **Start position** and **Max number of twilights**. Some settings affect performance, like **Gridsize** and **Bandwidth scale factor**.  Use **Aspect ratio** ~ 1.2 to get a pleasing map .... 
 
 This an MCMC output estimate of a seal location (from geolocation-light tag) compared to a satellite track. It's very old, but the performance of tcltk for an interactive "space time" image is pretty good, because we could bin the points fast, clear the current plot and simply add the time-range for the current UI setting. 
 
