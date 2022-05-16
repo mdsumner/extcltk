@@ -55,6 +55,7 @@ palette <- tclVar("heat")
 midLat <- (max(lats) - min(lats))/2
 aspect <- tclVar(abs(cos(min(lats) + midLat)))
 replot <- function(...) {
+  dev.hold()
   plot(lons,lats,type="n",xlim=bufX,ylim=bufY,asp=as.numeric(tclObj(aspect)))
   usr <- par("usr")
   pal <- as.character(tclObj(palette))
@@ -93,6 +94,7 @@ replot <- function(...) {
   if (ch != "n") {
     points(xx,yy,pch="x",col="blue",cex=.3)
   }
+  dev.flush()
 }
 
 regen <- function(...) {
